@@ -1,0 +1,17 @@
+
+.vttBackground{
+    background: #951DAD;
+    width: 100%;
+    height: 30px;
+    min-height: 30px;
+    display:flex;
+}
+    
+.boldClass{
+    font-weight: bold;
+    
+}
+
+.vttText{
+    color: white;
+}    

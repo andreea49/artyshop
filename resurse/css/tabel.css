@@ -1,0 +1,34 @@
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border:solid 1px;
+        border-spacing: 0;
+        counter-reset: tr;
+    }
+  
+    #table_b tbody>tr>td, #table_b th{
+        border:1px solid;
+        padding:0.2rem;    
+    }
+  
+    #table_b tbody tr td:first-child::before{
+        counter-increment: tr;
+        content:counter(tr);
+    }
+  
+    #table_b tbody tr:hover td{
+        background-color: #AEF553;
+    }
+  
+    #table_b tbody tr:nth-child(odd) {
+        background-color: #DB53F5;
+    }
+    
+    #table_b tbody tr:nth-child(even) {
+        background-color: #E97DFF;
+    }
+  
+    #table_b tfoot{
+        text-align: center;
+        column-span: 4;
+    }

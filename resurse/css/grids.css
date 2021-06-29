@@ -1,0 +1,51 @@
+html {
+    font-size:11px;
+}
+
+body {
+    padding:0px;
+    
+}
+
+header>p {
+    margin-top: auto;
+}
+
+header>h1 {
+    margin-top:2rem;
+}
+
+.container {
+    display:grid;
+    grid-template-areas: "z1"
+                          "z5"
+                          "z7"
+                          "z6"
+                          "z3"
+                          "z2"
+                          "z4"
+                          "z8";
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 0.8fr 0.5fr 0.5fr 0.5fr 2fr ;
+}
+
+.flexboxitem a {
+    text-decoration:none;
+    width:75px;
+}
+
+
+iframe {
+    max-width: 700px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#z2 {
+    overflow-x: scroll;
+}

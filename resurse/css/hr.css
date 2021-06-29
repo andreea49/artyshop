@@ -1,0 +1,15 @@
+hr{
+    width: 100%;
+    border-top: 5px ;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #d48aff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 20px 0px #d48aff;
+    background-image: radial-gradient(#ffffff, transparent);
+    filter: blur(2px);
+}

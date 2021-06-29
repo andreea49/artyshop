@@ -1,0 +1,68 @@
+.upb{
+    position: relative;    
+    height: 25px;
+    width: 30px;
+    background-color: #d48aff;
+    border-radius: 50%;
+    display: inline-block;
+    /*border: solid 2px black*/
+}
+
+.upbs{
+    position: relative;
+    left: 5px;
+    height: 25px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 40%;
+    display: inline-block;
+    /*border: solid 2px black*/
+}
+
+.uptri {
+    position: relative;
+    height: 5px;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid rgb(21, 255, 0);
+    border-top: 7px solid transparent;
+    display: inline-block;
+    transition: all 0.7s linear;
+}
+
+.tooltip:hover .uptri {
+    transform: translateY(-10px);
+    border-bottom: 7px solid  #E97DFF;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: 30px;
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#linkTop {
+    position: fixed;
+    left: 5px;
+    bottom: 15px;
+}

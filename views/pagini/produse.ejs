@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="ro">
+    <head>
+        <meta name="description" content="Produsele care pot fi aduse la tine de Artyshop">
+        <meta name="keywords" content="produse, arta, art">
+        <%- include("../fragmente/meta") %>
+        <title>Artyshop - home</title>
+        <%- include("../fragmente/header") %> 
+    </head>
+    <body>
+        <main>
+
+
+<!--          *filtre*         -->
+
+<input type="number" id="pret-minim"><button id="filtru">Filtreaza</button>
+
+            <section>
+                <h3>Produse</h3>
+                ....
+                <% for( let prod of locals.produse) { %>
+                    <article class= "produs">
+                        <p class ="nume">Nume: <a href= "/item/<%-prod.id%>"><span><%- prod.nume%></span></a></p>
+                        <p class ="pret">Pret: <span><%- prod.pret%></span></p>
+                        <p class ="descriere">Descriere:<span><%- prod.descriere%></span></p>
+                        <p class ="material">Material: <span><%- prod.material%></span></p>
+                        <p class ="categorie">Categorie: <span><%- prod.categorie%></span></p>
+                        <img class ="imagine" src ="/resurse/pics/galerie/<%- prod.imagine%>" alt= 'imagine produs' style = 'width: 300px; height: auto;'/>
+                    </article>
+                <% }%>
+            </section>
+        </main>
+    </body>
+</html>

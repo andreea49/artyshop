@@ -1,0 +1,65 @@
+{
+    "cale_galerie":"resurse/pics/galerie",
+    "pics": [
+      {
+        "cale_imagine":"p1.jpg",
+        "titlu":"edward",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p2.jpg",
+        "titlu":"berries",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p3.jpg",
+        "titlu":"sakura",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p4.jpg",
+        "titlu":"fish",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p5.jpg",
+        "titlu":"Captain america",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p6.jpg",
+        "titlu":"feather",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p7.jpg",
+        "titlu":"fox",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p8.jpg",
+        "titlu":"galaxy",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p9.jpg",
+        "titlu":"hunger games",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      },
+      {
+        "cale_imagine":"p10.jpg",
+        "titlu":"bird",
+        "descriere":"text descriere",
+        "sfert_ora":"4"
+      }
+    ]
+  }

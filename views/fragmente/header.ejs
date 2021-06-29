@@ -1,0 +1,49 @@
+<header>
+    <h1> <span>Artyshop</span>
+  </header>
+
+    <nav>
+      <div id="sname">
+
+      <label id="hamburger" for="ch-menu">
+        <i class="fa fa-bars"></i>
+    </label>
+    <input id="ch-menu" type="checkbox">
+
+      <ul id="meniu">
+        <li class="home"><a  href="#home"><div class="home-image"><i class="fa fa-home"></i></div> <span class="link1">Home</span>  </a></a>
+            <ul>
+               <li><a href="#Intro">Intro</a></li></a>
+               <li><a href="#Top">Top</a></li></a>
+               <li><a href="#Inspo">Inspiration</a></li></a>
+               <li><a href="#shop">Shop</a></li></a>
+        </ul>
+        </li>
+        <li><a href="/resurse/html/about.html">About us</a></a>
+            <ul>
+                <li><a href="/resurse/html/about.html">Phone number</a></li></a>
+                <li><a href="/resurse/html/about.html">Email</a></li></a>
+                <li><a href="/resurse/html/about.html">Instagram</a></li></a>
+            </ul>
+        </li>
+        <li><a href="/art">Art</a>
+           <ul>
+               <li><a href="/art">paper</a></li>
+               <li><a href="/art">canvas</a></li>
+               <li><a href="/art">glass</a></li>
+               <li><a href="/art">wood</a></li>
+               <li><a href="/art">others</a></li>
+           </ul>
+       </li>
+       <li><a href="/produse">Produse</a>
+        <ul>
+          <% for( let categorie of locals.info) { %>
+            <li><a href="/produse?tip=<%- categorie.categ %>"><%- categorie.categ %></a></li>
+        <% } %>
+        </ul>
+    </li>
+       <li id="nomen"><a href="#signup">Sign up</a></li>
+      </div>
+      </ul>
+      </div>
+    </nav>

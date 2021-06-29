@@ -1,0 +1,68 @@
+
+
+            <div id="filtrare">
+
+                <label> Cauta:
+                    <input id="i_text" type="text" value="">
+                </label>
+                <label> Pagini <br/>
+
+                    <em id="minrange" style="font-style: normal;">1</em>
+                    <input id="i_range" type="range" min="2" max="4000" step="1" value="3999" oninput="document.getElementById('rangeValLabel').innerHTML = this.value;">
+                    <em id="maxrange" style="font-style: normal;">4000</em> (<em id="rangeValLabel" style="font-style: normal;"></em>)
+
+                </label>
+
+                <div id="vacuta"> Afisati doar produsele care pot fi livrate prin posta?: 
+                <label>Da
+                    <input id="i_check1" name="gr_chck" value="true" type="checkbox"/>
+                </label>
+
+                <div> Culori:
+                    <label>Toate
+                        <input id="i_rad1" checked name="gr_rad" value="toate" type="radio"/>
+                    </label>
+                    <%var contor=2;%>
+                    <% for( let cool of locals.art ) {%>
+                    
+                    <label><%- cool.culoare_baza %>
+                        <input id="i_rad+contor" name="gr_rad" value="<%- cool.culoare_baza %>" type="radio"/>
+                        <%contor++;%>
+                    </label>
+                    <% } %>
+
+                </div>
+                <label>Select simplu:
+                    <select id="inp-culoare_baza">
+                        <option value="toate" selected>toate</option>
+                        <% for( let culoare_baza of locals.culoare_baza) { %>
+                            <option value="<%- cool.culoare_baza %>"><%- cool.culoare_baza %></option>
+                        <% } %>
+                    </select>
+                </label>
+                <br/>
+                <label>Pret: <br/>
+                    <select id="i_sel_multiplu" multiple size="5">
+                        <option value="0-1000" selected>toate</option>
+                        <option value="10-20" >10-20</option>
+                        <option value="20-45" >20-45</option>
+                        <option value="45-60" >45-60</option>
+                        <option value="60-100" >60-100</option>
+                    </select>
+                </label>
+                <br/>
+
+                <label>Cauta in Descrieri: <br/>
+                    <textarea id="i_textarea" placeholder="+ cuvinte cheie, - cuvinte ignorate"></textarea>
+                </label>
+                <br/>
+                <button id="filtru">Filtreaza</button>
+                <button id="sortCrescNume">Sorteaza crescator dupa nume</button>
+                <button id="sortDescrescNume">Sorteaza descrescator dupa nume</button>
+                <button id="resetare" >Reseteaza</button>
+
+
+            </div>
+            </div>```
+
+        

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="ro">
+    <head>
+        <meta name="description" content="Produsele care pot fi aduse la tine de Artyshop">
+        <meta name="keywords" content="produse, arta, art">
+        <%- include("../fragmente/meta") %>
+        <title>Artyshop - home</title>
+        <%- include("../fragmente/header") %> 
+    </head>
+    <body>
+        <main>
+            <section>
+                <h3>Produse</h3>   
+                    <article class= "produs">
+                        <p class ="nume">Nume: <span><%- produse.nume%></span></p>
+                        <p class ="pret">Pret: <span><%- produse.pret%></span></p>
+                        <p class ="descriere">Descriere:<span><%- produse.descriere%></span></p>
+                        <p class ="material">Material: <span><%- produse.material%></span></p>
+                        <p class ="prezentare">Prezentare: <span><%- produse.prezentare%></span></p>
+                        <p class ="greutate">Greutate: <span><%- produse.greutate%></span></p>
+                        <p class ="data_adaugare">Data_adaugare: <span><%- produse.data_adaugare%></span></p>
+                        <p class ="categorie">Categorie: <span><%- produse.categorie%></span></p>
+                        <p class ="culori">Culori: <span><%- produse.culori%></span></p>
+                        <p class ="posta">Posta: <span><%- produse.posta%></span></p>
+                        <img class ="imagine" src ="/resurse/pics/galerie/<%- produse.imagine%>" alt= 'imagine produs' style = 'width: 300px; height: auto;'/>
+                    </article>
+            </section>
+        </main>
+    </body>
+</html>

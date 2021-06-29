@@ -1,0 +1,44 @@
+#banner{   
+    font-family: "Lucida Console", "Courier New", monospace;
+    position:fixed;
+    width: 100%;
+    bottom:0;
+    background: #E97DFF;
+    border:#DB53F5 5px;
+    text-align: center;
+    animation: tranzitie;
+    animation-iteration-count:1;
+    animation-duration:16s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    opacity: 0;
+}
+
+
+@keyframes tranzitie{
+
+    0%{
+        opacity:1;
+        transform: translate(-100%);
+    }
+
+    25%{
+        opacity:1;
+        background:#E97DFF;
+    }
+
+    50%{
+        opacity: 1;
+        background:#DB53F5;
+    }
+
+    75%{
+        opacity:1;
+        background:#951DAD;
+    }
+
+    100%{
+        transform: translate(100%);
+        opacity:0
+    }
+}

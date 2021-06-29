@@ -1,0 +1,118 @@
+#hamburger{
+    display:block;
+}
+
+ul#meniu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    animation: slide .7s ease-in-out forwards;
+    transform-origin: left;
+  }
+   
+#ch-menu:checked+#meniu{
+    display: block;
+    width: 100%;
+}
+
+nav{
+    width:100%;
+}
+
+#meniu{
+    width: 100%;
+}
+
+nav ul#meniu>li{
+    width:100%;
+}
+
+nav ul#meniu>li ul{
+    position:absolute;
+    width:100%;
+    z-index:20;
+}
+
+nav ul#meniu>li>ul{
+    transform: scaleY(0);
+    transition: all 0.7s linear;
+}
+
+nav ul#meniu>li:hover>ul{
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul#meniu li a{
+    margin-left:0;
+    text-align:center;
+    padding: 5px;
+    display:block;
+    width: 100%;
+}
+
+#nomen a::before{
+    background-image:none;
+}
+
+
+ul#meniu>li:hover>a {
+    background:#E97DFF;
+}
+
+ul#meniu>li:hover>a{
+    color:#AEF553;
+}
+
+@keyframes slide {
+    0% {
+        right: 1020px;
+        opacity: 0;
+    }
+    100% {
+        right: 00px;
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    100% {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+ul#meniu>li>a>div{
+    margin-left:0;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 16px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+#sname {
+    color: #AEF553;
+}
+
+#sname a {
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 500ms;
+}
+
+#sname a:hover {
+    font-size:20px;
+    font-size-adjust: 16px;
+}
+

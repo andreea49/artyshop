@@ -1,0 +1,40 @@
+html{
+    font-size: 14px;
+}
+
+nav ul#meniu>li{
+    float:left;
+    width: 15%;
+    position: relative;
+}
+
+nav ul#meniu>li>a{
+
+    margin-left: 20%;
+    padding:4px;
+    width: max-content;
+}
+
+.link1{
+    display: none;
+}
+
+.home-image{
+    display: block;
+    margin-left:150%
+}
+
+#sname {
+    color: #AEF553;
+}
+
+#sname a {
+    font-weight: bold;
+    font-size: 16px;
+}
+    
+#sname a:hover {
+    font-size:20px;
+    font-size-adjust: 16px;
+}
+

@@ -1,0 +1,140 @@
+header{
+    text-align: center;
+}
+
+header>p{
+    margin-top: 50px;
+}
+
+header>h1{
+    margin-top:50px;
+}
+
+#zona2>h2{
+    text-align: center;
+}
+
+nav{
+    background-color:#E97DFF;
+    width: 100%;
+    padding:0;
+    height: 2.1rem;
+    position:fixed;
+    z-index: 10;
+    left:0;
+    top:0; 
+}
+
+nav ul#meniu ul{
+    float: left;
+    position: absolute;
+    width:100%;
+    height: 0px;
+}
+
+
+nav ul, nav li{
+    padding:0;
+    margin:0;
+}
+
+nav ul#meniu>li{
+    float:left;
+    width: 10%;
+    position: relative;
+}
+
+nav ul#meniu li{
+    text-align: center;    
+    list-style-type: none;
+    background: #E97DFF;
+}
+  
+nav ul#meniu li a{
+    text-decoration: none;
+    color:#AEF553;
+    display: block;
+    padding: 5px;
+}
+
+#nomen a::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 0%;
+    height: 10%;
+}
+
+
+#nomen a:hover:before{
+    width:85%;
+    transition: width 1s;
+}
+
+ul#meniu a{
+    transition: background 700ms linear;
+}
+
+nav ul#meniu>li>ul{
+    /*opacity: 0;*/
+    position: absolute;
+    transition: all 0.5s ease;
+    transform: scaleY(0);
+    position: absolute;
+    min-width: 20px;
+    z-index: 1;
+}
+
+nav ul#meniu>li:hover>ul{
+    transform: scaleY(1) !important;
+    opacity: 1;
+}
+
+#hamburger{
+    display: none;
+}
+
+#ch-menu{
+    display: none ;
+}
+
+.home-image{
+    display: none;
+}
+
+#sname {
+    color: #AEF553;
+}
+
+#sname a {
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 500ms;
+}
+    
+#sname a:hover {
+    font-size:20px;
+    font-size-adjust: 16px;
+    height: 20px;
+}
+
+
+@keyframes slidedown {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    100% {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+
+
+  
+  
+/*<a href="#logsig"><small>Log in/Sign up</small></a></h1>*/
+  
+  

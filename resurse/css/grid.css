@@ -1,0 +1,83 @@
+html {
+    font-size:16px;
+}
+
+body {
+    margin:0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: 10rem 20rem 10rem 10rem 10rem;
+    grid-gap: 0.2rem;
+    grid-template-areas: 
+    "z1 z1 z1 z1"
+    "z5 z6 z6 z7"
+    "z3 z3 z2 z2"
+    "z4 z4 z2 z2"
+    "z8 z8 z8 z8"
+}
+
+#z1 {
+    grid-area: z1;
+    background-color:#951DAD;
+}
+
+
+#z2 {
+    grid-area: z2;
+    background-color:white;
+}
+
+
+#z3 {
+    grid-area: z3;
+    background-color:#951DAD;
+}
+
+
+#z4 {
+    grid-area: z4;
+    background-color: #DB53F5;
+}
+
+
+#z5 {
+    grid-area: z5;
+    background-color:#AEF553;
+}
+
+
+#z6 {
+    grid-area: z6;
+    background-color: #E97DFF;
+}
+
+
+#z7 {
+    grid-area: z7;
+    background-color: #AEF553;
+}
+
+
+#z8 {
+    grid-area: z8;
+    background-color: #6AA818;
+}
+
+
+body {
+    overflow-x:hidden;
+}
+
+
+
+
+
+
+
+
+
+
